@@ -1,0 +1,678 @@
+/* Embed font */
+/* sukhumvit */
+@font-face {
+    font-family: 'sukhumvit';
+    src: url(../fonts/SukhumvitSet-Text.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit';
+    src: url(../fonts/SukhumvitSet-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit';
+    src: url(../fonts/SukhumvitSet-Light.ttf) format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit';
+    src: url(../fonts/SukhumvitSet-Thin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sukhumvit';
+    src: url(../fonts/SukhumvitSet-Medium.ttf) format("truetype");
+    font-weight: medium;
+    font-style: normal;
+}
+
+/* CmPrasanmit */
+
+@font-face {
+    font-family: 'cmprasanmit';
+    src: url(../fonts/CmPrasanmit/CmPrasanmit\ Regular.ttf) format("truetype") font-weight-normal,
+        url(../fonts/CmPrasanmit/CmPrasanmit\ Bold.ttf) format("truetype") font-weight-bold,
+        url(../fonts/CmPrasanmit/CmPrasanmit\ Bold\ Italic.ttf) format("truetype") font-italic, font-weight-bold,
+        url(../fonts/CmPrasanmit/CmPrasanmit\ Italic.ttf) format("truetype") font-italic;
+
+}
+
+#header {
+    font-family: 'cmprasanmit', sans-serif;
+    position: relative;
+}
+
+/* Navbar */
+.container-fluid {
+    /* changepadding of navbar */
+    padding-left: 0px;
+    padding-right: 0px;
+   
+}
+
+.navbar {
+    box-shadow: 0px 0px 10px #dadddd;
+}
+/* change nav-brand */
+.navbar-brand {
+    padding-left: 1%;
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: black;
+}
+.navbar-brand-logo {
+    width: 40px;
+}
+.navbar-brand-logo:hover {
+    opacity: 0.7;
+    color: #16c79a;
+}
+
+/* change navbar-item */
+
+.nav-item {
+    padding: 0 20px;
+    font-family: 'cmprasanmit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#login-btn {
+    font-size: 1.5rem;
+    opacity: 1;
+    background-color:  #0A1A85;
+    border: none;
+    font-weight: bold;
+    color:#fff; 
+}
+#login-btn:hover {
+    color: #16c79a;
+    background-color:  #0A1A85;
+    transform: scale(1.05, 1.05);
+}
+
+/* change navbar-background */
+
+.navbar-custom {
+    background: #fff ;    
+    /* transparent */
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0.9;
+    position: fixed;
+}
+
+/* change navbar link color */
+
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+
+/* change navbar active and hover color */
+
+.navbar-custom .nav-item .active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .navbar-brand:hover {
+    color: #5B1E96;
+}
+.navbar-custom .navbar-item .navbar-item-login .btn-primary:hover {
+    opacity: 1;
+    background-color:  #5B1E96;
+
+}
+/* change hamberger icon */
+
+.icon-hamberger {
+    color: #5B1E96;
+}
+
+@media (max-width: 1080px) {
+
+    #header {
+        text-align: center;
+       
+    }
+
+    #login-btn {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0 auto;
+    display: block;
+    }
+    .nav-item {
+        padding: 0% 30% 0% 30%;
+    }
+
+
+}
+
+/* landing area */
+#landing {
+    display: flex;
+    justify-content: center;
+    padding: 15% 0% 15% 0%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.landing-picture{
+    width: auto;
+}
+.appherb-landing-text h1 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 1%;
+}
+.appherb-landing-text h3 {
+    font-family: 'cmprasanmit', sans-serif;
+    line-height: 1.15;
+    padding: 1%;
+
+}
+@media (max-width: 1080px) {
+    #landing{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+#landing-btn {
+    background-color: #0A1A85;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'cmprasanmit', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 10px  #839097;
+}
+#landing-btn:hover {
+    color: #16c79a;
+    transform: scale(1.05, 1.05);
+    
+}
+
+
+/* about */
+#about{
+    justify-content: center;
+    padding: 5% 0% 5% 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+#about h3 {
+        font-family: 'sukhumvit', sans-serif;
+        font-weight: bold;
+        line-height: 1.15;
+        padding: 1%;
+    }
+
+#about h4 {
+        font-family: 'cmprasanmit', sans-serif;
+        line-height: 1.15;
+        padding: 1%;
+    
+}
+.about-picture {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+@media (max-width: 1080px) {
+    #about{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+    }
+    .about-picture {
+        width: 100%;
+        height: 100%;
+        padding: 10%;
+    
+    }
+}
+
+.analysis {
+    padding-top: 1%;
+    text-align: left;
+}
+#analysis {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Research */
+
+#Research {
+    padding: 5% 20% 15% 20%;
+    text-align: center;
+
+}
+#Research h1 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.15;
+    padding: 1%;
+}
+#Research h3 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 0%;
+}
+
+.Research-logo {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Research-img-logo {
+    width: 150px;
+    text-align: center;
+    
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .Research-logo{
+        padding: 20%;
+    }
+
+}
+
+.Research-count {
+padding: 10%;
+
+}
+
+.card-research {
+    box-shadow: 1px 1px 50px #d1cfd0;
+    padding: 0%;
+    
+}
+
+.card-research-header {
+    background-color: #0A1A85;
+    padding: 2%;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+
+
+/* features */
+
+#features {
+    justify-content: center;
+    padding: 5% 15% 5% 15%;
+    text-align: center;
+}
+
+
+#features h3 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.15;
+    padding: 1%;
+}
+
+#features h4{
+    font-family: 'cmprasanmit', sans-serif;
+    line-height: 1.15;
+    padding: 1%;
+}
+.feautures-img {
+    width: 100px;
+    padding: 10%;
+}
+
+.card-features {
+    box-shadow: 1px 1px 5px #e0f4ff;
+    padding: 2%;
+    margin-top: 10%;
+} 
+
+.card-features:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 10px  #a9d1e7;
+}
+
+/* Scale up the box */
+.card-features:hover {
+    transform: scale(1.05, 1.05);
+  }
+@media (max-width: 1080px) {
+    #features {
+        padding: 15% 5% 10% 5%;
+    }
+    .card-features{
+        margin: 5%;
+    }
+
+}
+
+
+/* benefit */
+
+#benefit {
+    justify-content: center;
+    padding: 2% 20% 10% 20%;
+    text-align: center;
+}
+
+
+#benefit h3 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.15;
+    padding: 1%;
+}
+
+#benefit h4{
+    font-family: 'cmprasanmit', sans-serif;
+    line-height: 1.15;
+    padding: 1%;
+}
+
+
+.benefit-area {
+    padding: 0% 0% 0% 0%;
+    text-align: left;
+}
+.benefit-icon {
+    padding: 0% ;
+    text-align: center;
+    vertical-align: auto;
+    
+}
+.benefit-img {
+    width: 70px;
+    vertical-align: auto;
+    
+}
+
+@media (max-width: 1080px) {
+    .benefit-img {
+        padding: 2% 0% 5% 0%;
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+    #benefit {
+        padding: 10%;
+    }
+
+}
+
+
+/* Callforaction */
+
+#callforaction {
+    justify-content: center;
+    padding: 5% 20% 20% 20%;
+    text-align: center;
+    font-family: 'sukhumvit', sans-serif;
+}
+#callforaction h3 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.15;
+    padding: 1%;
+    margin: 0%;
+}
+#callforaction h4 {
+    font-family: 'cmprasanmit', sans-serif;
+    line-height: 1.15;
+    padding: 1%;
+    text-align: center;
+}
+.Callforaction-card {
+    padding: 0%;
+    box-shadow: 0px 1px 15px  #acb6bb;
+    margin-top: 5%;
+}
+.Callforaction-register-form {
+    padding: 5% 10% 5% 10%;
+}
+.Callforaction-card-header {
+    background-color: #0A1A85;
+    color: #fff;
+    
+}
+.Action {
+    padding: 5%;
+}
+#action-btn {
+    background-color: #0A1A85;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'cmprasanmit', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 15px  #839097;
+}
+#action-btn:hover {
+    color: #16c79a;
+    transform: scale(1.05, 1.05);
+    
+    
+}
+
+#forget-btn {
+    border-radius: 40px;
+    font-family: 'cmprasanmit', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 15px  #839097;
+}
+#forget-btn:hover {
+    color: #16c79a;
+    transform: scale(1.05, 1.05);
+    
+    
+}
+.Action-2 {
+    padding: 2.5% 5% 5% 5%;
+}
+.privacy-term {
+
+    padding-top: 10%;
+
+}
+#emailhelp-custom {
+    text-align: left;
+}
+
+
+
+
+#contact {
+    justify-content: center;
+    padding: 5% 20% 5% 20%;
+    text-align: center;
+    font-family: 'sukhumvit', sans-serif;
+    box-shadow: 0px 0px 10px #dadddd;
+}
+#benefit h3 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.15;
+    padding: 1%;
+    color: black;
+}
+#contact h4 {
+    font-family: 'cmprasanmit', sans-serif;
+    line-height: 1.15;
+    padding: 1%;
+    text-align: center;
+}
+
+.contact-text {
+    padding-top: 10%;
+}
+
+.social-icon {
+    padding-right: 5%;
+}
+
+.social-icon:hover {
+    color: #16c79a;
+    transform: scale(1.05, 1.05);
+}
+
+
+
+.fa-sidebar {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%);
+    
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+#main-content {
+    position: fixed;
+    margin-left:30%;
+    margin-top: 80px;
+    font-family: 'cmprasanmit', sans-serif;
+    font-size: 1.5rem;
+    right: 1%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+
+   
+   
+}
+#main-content h3, #main-content h4, #main-content h5 {
+    font-family: 'sukhumvit', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 5%;
+}
+#main-content h5{
+    padding-top: 0%;
+}
+
+
+
+
+@media (max-width: 1080px) {
+    .sidebar {
+        display: none;
+    }
+    #main-content {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        left: 1%;
+}
+    .navbar {
+        width: 100%;
+    }
+}
+
+.active {
+    color: #5B1E96;
+}
+
+.img-product {
+    width:500px;
+    padding-bottom: 2%;
+}
+
+.img-conclude {
+    width: 1000px;
+}
+
+.efficacy-table {
+    width: 1000px;
+}
+@media (max-width: 1080px) {
+    .img-conclude {
+        width: 400px;
+    }
+    .efficacy-table {
+        width: 400px;
+    }
+    .img-product {
+        width: 300px;
+    }
+    
+    #main-content {
+        width: auto;
+        margin-left: 3%;
+        margin-right: 3%;
+       
+    }
+
+}
+
+.otherpages {
+    text-decoration: none;
+    color: black;
+}
+
+.herb-picture {
+    width: 80%;
+
+}
+
+.herb-list {
+    margin-bottom: 5%;
+}
+
+@media (min-width:1500px) {
+    #main-content {
+       left: 0;
+       
+    }
+}
+
+#references {
+    padding-bottom: 20%;
+}
